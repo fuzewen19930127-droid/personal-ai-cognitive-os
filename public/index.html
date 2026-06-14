@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal AI Cognitive OS Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d9dee7;
+      --ok: #0f766e;
+      --warn: #b45309;
+      --bad: #b91c1c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 28px 32px 20px;
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    p { margin: 0; }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    .subtitle { color: var(--muted); max-width: 840px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 24px;
+    }
+    .stat {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .stat strong { display: block; font-size: 26px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      min-width: 0;
+    }
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .list { display: grid; gap: 10px; }
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfd;
+    }
+    .item-title {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .item-title strong { overflow-wrap: anywhere; }
+    .meta, .muted { color: var(--muted); font-size: 13px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      white-space: nowrap;
+      background: #fff;
+    }
+    .ok { color: var(--ok); border-color: #99d5cd; }
+    .warn { color: var(--warn); border-color: #f0c37a; }
+    .bad { color: var(--bad); border-color: #ef9a9a; }
+    .muted.badge { color: var(--muted); }
+    code {
+      background: #eef1f5;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+    @media (max-width: 820px) {
+      header { padding: 22px 18px 16px; }
+      main { padding: 16px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Personal AI Cognitive OS Dashboard</h1>
+    <p class="subtitle">A generated public dashboard for the local-file AI cognitive memory template. It shows memory layers, rules, projects, error-prevention logic, and evolution events from sample JSON only.</p>
+  </header>
+  <main>
+    <div class="stats">
+      <div class="stat"><strong>6</strong><span>Systems</span></div><div class="stat"><strong>12</strong><span>Rule cards</span></div><div class="stat"><strong>1</strong><span>Projects</span></div><div class="stat"><strong>4</strong><span>Events</span></div>
+    </div>
+    <div class="grid">
+      <section class="card"><div class="card-head"><h2>Systems</h2></div><div class="list">
+        <div class="item">
+          <div class="item-title">
+            <strong>Control System</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Task routing, three-layer recall, rule hierarchy, writeback policy, and safety boundaries.</p>
+          <p class="meta"><code>system_control_system</code> · L3 · system/00_control/one_page_overview.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>L1 Project Memory And Rules</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Project handoff, immediate task memory, knowledge cards, durable rules, and error routes.</p>
+          <p class="meta"><code>personal_memory_system</code> · L2 · system/01_memory/README.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Project Spec System</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Project cards, current context, acceptance criteria, evidence traces, and validation records.</p>
+          <p class="meta"><code>project_spec_system</code> · L2 · system/02_projects/project_card_template.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>L2 Local External Knowledge</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Local source manifests, indexes, digests, candidate rules, and adaptation notes.</p>
+          <p class="meta"><code>external_information_intake_system</code> · L1 · system/03_external_knowledge/README.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>L3 Real-Time Verification</strong>
+            <span class="badge warn">review</span>
+          </div>
+          <p>Current verification for APIs, prices, versions, laws, platform rules, and security guidance.</p>
+          <p class="meta"><code>realtime_research_system</code> · L1 · system/07_realtime_research/README.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Controlled Evolution System</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Error routes become prevention rules; repeated processes become SOPs; stale memory is demoted.</p>
+          <p class="meta"><code>evolution_system</code> · L1 · system/06_evolution/README.md</p>
+        </div></div></section>
+      <section class="card"><div class="card-head"><h2>Projects</h2></div><div class="list">
+        <div class="item">
+          <div class="item-title">
+            <strong>Sample Personal AI Cognitive OS</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Next action: Run npm run check and publish v0.1</p>
+          <p class="meta"><code>sample_personal_ai_os</code> · verification: pending</p>
+        </div></div></section>
+      <section class="card"><div class="card-head"><h2>Rule Cards</h2></div><div class="list">
+        <div class="item">
+          <div class="item-title">
+            <strong>Local files are the primary memory layer</strong>
+            <span class="badge ok">P10</span>
+          </div>
+          <p>The task involves projects, rules, memory, file paths, or prior decisions.</p>
+          <p class="meta"><code>rule.local_files_are_primary_source</code> · control</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Use three-layer recall before complex work</strong>
+            <span class="badge ok">P10</span>
+          </div>
+          <p>The task involves project handoff, technical decisions, external knowledge, or current facts.</p>
+          <p class="meta"><code>rule.three_layer_recall</code> · recall</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Record failed routes</strong>
+            <span class="badge ok">P10</span>
+          </div>
+          <p>A task reveals a path that failed, caused rework, wasted time, or created risk.</p>
+          <p class="meta"><code>rule.error_routes_must_be_recorded</code> · error_memory</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Public docs use English; machine fields stay stable</strong>
+            <span class="badge ok">P9</span>
+          </div>
+          <p>Writing README, docs, JSON, scripts, API fields, or environment variables.</p>
+          <p class="meta"><code>rule.public_docs_english_machine_fields_stable</code> · documentation</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Traceability over cleverness</strong>
+            <span class="badge ok">P10</span>
+          </div>
+          <p>Producing conclusions, updating memory, or claiming completion.</p>
+          <p class="meta"><code>rule.traceability_over_smartness</code> · evidence</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Write only reusable memory</strong>
+            <span class="badge ok">P9</span>
+          </div>
+          <p>Preparing to write task results, preferences, project state, or external conclusions into memory.</p>
+          <p class="meta"><code>rule.memory_write_filter</code> · memory</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Exclude secrets from memory text</strong>
+            <span class="badge ok">P10</span>
+          </div>
+          <p>Content involves passwords, API keys, tokens, cookies, verification codes, private keys, customer data, or full private transcripts.</p>
+          <p class="meta"><code>rule.secret_excluded_memory</code> · security</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Long-running work needs a project card</strong>
+            <span class="badge ok">P8</span>
+          </div>
+          <p>A task spans more than one session, has multiple stages, needs future handoff, or needs acceptance criteria.</p>
+          <p class="meta"><code>rule.project_card_required_for_long_running_work</code> · project</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>External material is evidence first</strong>
+            <span class="badge ok">P8</span>
+          </div>
+          <p>Adding, reading, distilling, or citing external material.</p>
+          <p class="meta"><code>rule.external_raw_is_not_rule</code> · external_knowledge</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>High-change facts require real-time verification</strong>
+            <span class="badge ok">P9</span>
+          </div>
+          <p>The task depends on an external fact that may have changed.</p>
+          <p class="meta"><code>rule.high_change_requires_realtime_verification</code> · real_time_verification</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>SOP before automation</strong>
+            <span class="badge ok">P7</span>
+          </div>
+          <p>Considering whether to turn a manual process into a tool or automation.</p>
+          <p class="meta"><code>rule.automation_after_stable_sop</code> · automation</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>Auto-evolution must be controlled</strong>
+            <span class="badge ok">P9</span>
+          </div>
+          <p>A task, weekly audit, or error review reveals reusable knowledge.</p>
+          <p class="meta"><code>rule.controlled_auto_evolution</code> · evolution</p>
+        </div></div></section>
+      <section class="card"><div class="card-head"><h2>Recent Events</h2></div><div class="list">
+        <div class="item">
+          <div class="item-title">
+            <strong>event.public_template_initialized</strong>
+            <span class="badge ok">completed</span>
+          </div>
+          <p>Initialized the public template with README, three-layer memory, rule cards, error routes, project card templates, sample data, and scripts.</p>
+          <p class="meta">2026-06-14 · local_template_example</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>event.security_boundary_defined</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Defined the public boundary: templates and sample data only; no private memory, secrets, or raw private chat transcripts.</p>
+          <p class="meta">2026-06-14 · docs/sanitization.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>event.positioning_upgraded_to_cognitive_os</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Upgraded the positioning from an external-brain template to a local-file AI cognitive memory system.</p>
+          <p class="meta">2026-06-14 · docs/cognitive-model.md</p>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <strong>event.error_route_promoted_to_rule</strong>
+            <span class="badge ok">active</span>
+          </div>
+          <p>Added a proof case showing how a failed project-memory route becomes a reusable prevention rule.</p>
+          <p class="meta">2026-06-14 · docs/proof-case.md</p>
+        </div></div></section>
+    </div>
+  </main>
+</body>
+</html>

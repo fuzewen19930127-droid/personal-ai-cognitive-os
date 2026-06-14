@@ -1,0 +1,241 @@
+{
+  "schema_version": "rule_cards.v1",
+  "updated_at": "2026-06-14",
+  "cards": [
+    {
+      "rule_id": "rule.local_files_are_primary_source",
+      "title": "Local files are the primary memory layer",
+      "category": "control",
+      "system_id": "system_control_system",
+      "scope": "standard and higher-complexity tasks",
+      "applies_when": "The task involves projects, rules, memory, file paths, or prior decisions.",
+      "do": [
+        "Read AGENTS.md, rule cards, project cards, task memory, and error routes first.",
+        "Treat Markdown and JSON files as the current local source of truth.",
+        "Verify current APIs, prices, laws, and platform rules from official sources when needed."
+      ],
+      "dont": [
+        "Do not continue long-running projects only from the active chat context.",
+        "Do not treat old chat history or external notes as current rules without checking local state."
+      ],
+      "status": "active",
+      "priority": 10,
+      "source_file": "system/00_control/one_page_overview.md"
+    },
+    {
+      "rule_id": "rule.three_layer_recall",
+      "title": "Use three-layer recall before complex work",
+      "category": "recall",
+      "system_id": "system_control_system",
+      "scope": "standard, enhanced, and high-change tasks",
+      "applies_when": "The task involves project handoff, technical decisions, external knowledge, or current facts.",
+      "do": [
+        "Recall L1 project memory and rules first.",
+        "Recall L2 local external knowledge when background material is needed.",
+        "Use L3 real-time verification for APIs, prices, versions, laws, platform rules, and security guidance."
+      ],
+      "dont": [
+        "Do not mix personal rules, external evidence, and real-time facts into one undifferentiated layer.",
+        "Do not let a real-time source automatically overwrite local project decisions."
+      ],
+      "status": "active",
+      "priority": 10,
+      "source_file": "docs/cognitive-model.md"
+    },
+    {
+      "rule_id": "rule.error_routes_must_be_recorded",
+      "title": "Record failed routes",
+      "category": "error_memory",
+      "system_id": "personal_memory_system",
+      "scope": "failed attempts, rework, dead ends, risky approaches",
+      "applies_when": "A task reveals a path that failed, caused rework, wasted time, or created risk.",
+      "do": [
+        "Write wrong_path, why_failed, corrected_path, and next_prevention to error_routes.md.",
+        "Check error routes before similar future tasks.",
+        "Promote repeated error routes into rule cards or SOP constraints."
+      ],
+      "dont": [
+        "Do not leave failed paths only in the current chat.",
+        "Do not keep disproven approaches as active recommended routes."
+      ],
+      "status": "active",
+      "priority": 10,
+      "source_file": "system/01_memory/error_routes.md"
+    },
+    {
+      "rule_id": "rule.public_docs_english_machine_fields_stable",
+      "title": "Public docs use English; machine fields stay stable",
+      "category": "documentation",
+      "system_id": "system_control_system",
+      "scope": "public documentation, code, data, and templates",
+      "applies_when": "Writing README, docs, JSON, scripts, API fields, or environment variables.",
+      "do": [
+        "Use clear English for public human-facing docs in this template.",
+        "Keep variables, JSON keys, commands, environment variables, and API fields in English."
+      ],
+      "dont": [
+        "Do not translate machine-readable keys or package names.",
+        "Do not mix private personal language rules into the public template unless documented as a customization."
+      ],
+      "status": "active",
+      "priority": 9,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "rule_id": "rule.traceability_over_smartness",
+      "title": "Traceability over cleverness",
+      "category": "evidence",
+      "system_id": "evaluation_observability_system",
+      "scope": "long-term conclusions, project state, rule changes, deliverables",
+      "applies_when": "Producing conclusions, updating memory, or claiming completion.",
+      "do": [
+        "Keep source_trace, file paths, validation method, and update time.",
+        "Distinguish created, ran, verified, reusable, and publish_ready states."
+      ],
+      "dont": [
+        "Do not replace evidence with vague confidence.",
+        "Do not call a path runnable just because it exists."
+      ],
+      "status": "active",
+      "priority": 10,
+      "source_file": "system/00_control/one_page_overview.md"
+    },
+    {
+      "rule_id": "rule.memory_write_filter",
+      "title": "Write only reusable memory",
+      "category": "memory",
+      "system_id": "personal_memory_system",
+      "scope": "long-term memory and immediate task memory",
+      "applies_when": "Preparing to write task results, preferences, project state, or external conclusions into memory.",
+      "do": [
+        "Write long-term preferences, stable rules, project state, important decisions, reusable flows, and verification results.",
+        "Check traceability, actionability, stability, freshness, and safety before writing."
+      ],
+      "dont": [
+        "Do not store full private chat transcripts.",
+        "Do not write one-off emotion, temporary guesses, or unverified conclusions."
+      ],
+      "status": "active",
+      "priority": 9,
+      "source_file": "system/01_memory/README.md"
+    },
+    {
+      "rule_id": "rule.secret_excluded_memory",
+      "title": "Exclude secrets from memory text",
+      "category": "security",
+      "system_id": "security_governance_system",
+      "scope": "all files, logs, project cards, and dashboard data",
+      "applies_when": "Content involves passwords, API keys, tokens, cookies, verification codes, private keys, customer data, or full private transcripts.",
+      "do": [
+        "Record only sensitivity, secret_ref, purpose, exclusion reason, and sanitized source_trace.",
+        "Treat uncertain material as more sensitive until reviewed."
+      ],
+      "dont": [
+        "Do not store keys, cookies, tokens, verification codes, or private raw transcripts in any formal file.",
+        "Do not repeat secret plaintext in logs or dashboards."
+      ],
+      "status": "active",
+      "priority": 10,
+      "source_file": "docs/sanitization.md"
+    },
+    {
+      "rule_id": "rule.project_card_required_for_long_running_work",
+      "title": "Long-running work needs a project card",
+      "category": "project",
+      "system_id": "project_spec_system",
+      "scope": "projects, systems, features, automations, content assets, and research tasks",
+      "applies_when": "A task spans more than one session, has multiple stages, needs future handoff, or needs acceptance criteria.",
+      "do": [
+        "Create at least project_brief.md, current_context.md, progress_log.md, evidence_trace.md, and acceptance_checklist.md.",
+        "Keep handoff indexes short; store detailed project state inside project cards."
+      ],
+      "dont": [
+        "Do not leave a long-running project only in chat history.",
+        "Do not pollute long-term rules with one-off project details."
+      ],
+      "status": "active",
+      "priority": 8,
+      "source_file": "system/02_projects/project_card_template.md"
+    },
+    {
+      "rule_id": "rule.external_raw_is_not_rule",
+      "title": "External material is evidence first",
+      "category": "external_knowledge",
+      "system_id": "external_information_intake_system",
+      "scope": "docs, repos, papers, tutorials, community experience, API docs, and news",
+      "applies_when": "Adding, reading, distilling, or citing external material.",
+      "do": [
+        "Keep raw, manifest, index, digest, analysis, candidate_rule, and active_rule separate.",
+        "Adapt external conclusions locally before promoting them to rules."
+      ],
+      "dont": [
+        "Do not copy raw external material directly into long-term rules.",
+        "Do not let external material automatically override current project rules."
+      ],
+      "status": "active",
+      "priority": 8,
+      "source_file": "system/03_external_knowledge/README.md"
+    },
+    {
+      "rule_id": "rule.high_change_requires_realtime_verification",
+      "title": "High-change facts require real-time verification",
+      "category": "real_time_verification",
+      "system_id": "external_information_intake_system",
+      "scope": "APIs, models, prices, laws, policies, platform rules, software versions, security guidance, market news",
+      "applies_when": "The task depends on an external fact that may have changed.",
+      "do": [
+        "Prefer official docs, official repos, or primary sources.",
+        "Record checked_at, sources, current_facts, and impact_on_local_rules.",
+        "Only overwrite old facts at the current-fact layer; rule changes still need local adaptation."
+      ],
+      "dont": [
+        "Do not answer current facts from old local digests.",
+        "Do not turn real-time search results directly into long-term rules."
+      ],
+      "status": "active",
+      "priority": 9,
+      "source_file": "system/07_realtime_research/README.md"
+    },
+    {
+      "rule_id": "rule.automation_after_stable_sop",
+      "title": "SOP before automation",
+      "category": "automation",
+      "system_id": "workflow_skill_automation_system",
+      "scope": "repeatable processes, scripts, scheduled tasks, and workflows",
+      "applies_when": "Considering whether to turn a manual process into a tool or automation.",
+      "do": [
+        "Automate only after inputs, steps, outputs, and acceptance criteria are stable.",
+        "Prefer automation for low-risk, retryable, observable processes with clear human checkpoints."
+      ],
+      "dont": [
+        "Do not automate deletion, overwrites, publishing, payments, permissions, or secret reads by default.",
+        "Do not hand open-ended judgment to automation without acceptance criteria."
+      ],
+      "status": "active",
+      "priority": 7,
+      "source_file": "docs/operating-model.md"
+    },
+    {
+      "rule_id": "rule.controlled_auto_evolution",
+      "title": "Auto-evolution must be controlled",
+      "category": "evolution",
+      "system_id": "workflow_skill_automation_system",
+      "scope": "rule upgrades, SOP upgrades, scripts, memory demotion, and system cleanup",
+      "applies_when": "A task, weekly audit, or error review reveals reusable knowledge.",
+      "do": [
+        "Write new facts to immediate task memory and project cards first.",
+        "Write failed routes to error_routes.md.",
+        "Promote repeated successful flows to SOPs before scripts.",
+        "Demote stale or failed rules to review, deprecated, or archived."
+      ],
+      "dont": [
+        "Do not automatically delete the only evidence.",
+        "Do not promote a one-off guess into a long-term rule.",
+        "Do not automate publishing, payment, permissions, or secrets."
+      ],
+      "status": "active",
+      "priority": 9,
+      "source_file": "system/06_evolution/README.md"
+    }
+  ]
+}

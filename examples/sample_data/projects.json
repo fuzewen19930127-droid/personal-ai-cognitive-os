@@ -1,0 +1,14 @@
+{
+  "schema_version": "projects.v1",
+  "projects": [
+    {
+      "project_id": "sample_personal_ai_os",
+      "display_name": "Sample Personal AI Cognitive OS",
+      "system_id": "system_control_system",
+      "status": "active",
+      "entry_path": "examples/sample_project/project_brief.md",
+      "next_action": "Run npm run check and publish v0.1",
+      "verification": "pending"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "events.v1",
+  "events": [
+    {
+      "event_id": "event.public_template_initialized",
+      "created_at": "2026-06-14",
+      "type": "project_status",
+      "project_id": "sample_personal_ai_os",
+      "summary": "Initialized the public template with README, three-layer memory, rule cards, error routes, project card templates, sample data, and scripts.",
+      "status": "completed",
+      "source_trace": "local_template_example"
+    },
+    {
+      "event_id": "event.security_boundary_defined",
+      "created_at": "2026-06-14",
+      "type": "rule",
+      "project_id": "sample_personal_ai_os",
+      "summary": "Defined the public boundary: templates and sample data only; no private memory, secrets, or raw private chat transcripts.",
+      "status": "active",
+      "source_trace": "docs/sanitization.md"
+    },
+    {
+      "event_id": "event.positioning_upgraded_to_cognitive_os",
+      "created_at": "2026-06-14",
+      "type": "evolution",
+      "project_id": "sample_personal_ai_os",
+      "summary": "Upgraded the positioning from an external-brain template to a local-file AI cognitive memory system.",
+      "status": "active",
+      "source_trace": "docs/cognitive-model.md"
+    },
+    {
+      "event_id": "event.error_route_promoted_to_rule",
+      "created_at": "2026-06-14",
+      "type": "proof_case",
+      "project_id": "sample_personal_ai_os",
+      "summary": "Added a proof case showing how a failed project-memory route becomes a reusable prevention rule.",
+      "status": "active",
+      "source_trace": "docs/proof-case.md"
+    }
+  ]
+}

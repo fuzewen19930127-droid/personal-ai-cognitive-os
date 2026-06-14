@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640" viewBox="0 0 1120 640" role="img" aria-labelledby="title desc">
+  <title id="title">Personal AI Cognitive OS architecture</title>
+  <desc id="desc">Three-layer memory architecture with task intake, execution, writeback, audit, and controlled evolution.</desc>
+  <style>
+    .bg { fill: #f6f7f9; }
+    .panel { fill: #ffffff; stroke: #d9dee7; stroke-width: 2; }
+    .title { fill: #111827; font: 700 30px Segoe UI, Arial, sans-serif; }
+    .subtitle { fill: #4b5563; font: 400 16px Segoe UI, Arial, sans-serif; }
+    .h { fill: #111827; font: 700 18px Segoe UI, Arial, sans-serif; }
+    .t { fill: #374151; font: 400 14px Segoe UI, Arial, sans-serif; }
+    .small { fill: #6b7280; font: 400 12px Segoe UI, Arial, sans-serif; }
+    .accent1 { fill: #e0f2fe; stroke: #0284c7; }
+    .accent2 { fill: #ecfdf5; stroke: #059669; }
+    .accent3 { fill: #fff7ed; stroke: #ea580c; }
+    .accent4 { fill: #f5f3ff; stroke: #7c3aed; }
+    .arrow { stroke: #64748b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1120" height="640"/>
+  <text class="title" x="48" y="58">Personal AI Cognitive OS</text>
+  <text class="subtitle" x="48" y="86">Local-file memory, rules, external knowledge, real-time verification, and controlled evolution for AI agents.</text>
+
+  <rect class="panel accent1" x="48" y="132" width="210" height="96" rx="10"/>
+  <text class="h" x="72" y="166">Task Intake</text>
+  <text class="t" x="72" y="192">Classify task type</text>
+  <text class="small" x="72" y="214">simple, project, code, research</text>
+
+  <rect class="panel accent2" x="314" y="110" width="250" height="140" rx="10"/>
+  <text class="h" x="338" y="144">L1 Project Memory</text>
+  <text class="t" x="338" y="171">Project cards</text>
+  <text class="t" x="338" y="194">Immediate task memory</text>
+  <text class="t" x="338" y="217">Rule cards and error routes</text>
+
+  <rect class="panel accent2" x="314" y="272" width="250" height="120" rx="10"/>
+  <text class="h" x="338" y="306">L2 External Knowledge</text>
+  <text class="t" x="338" y="333">Source manifest</text>
+  <text class="t" x="338" y="356">Indexes, digests, candidate rules</text>
+
+  <rect class="panel accent3" x="314" y="414" width="250" height="120" rx="10"/>
+  <text class="h" x="338" y="448">L3 Real-Time Verification</text>
+  <text class="t" x="338" y="475">APIs, prices, versions</text>
+  <text class="t" x="338" y="498">laws, policies, security guidance</text>
+
+  <rect class="panel" x="646" y="166" width="210" height="96" rx="10"/>
+  <text class="h" x="670" y="200">Execution</text>
+  <text class="t" x="670" y="226">Run task and validate output</text>
+
+  <rect class="panel accent4" x="646" y="326" width="210" height="116" rx="10"/>
+  <text class="h" x="670" y="360">Writeback</text>
+  <text class="t" x="670" y="386">Facts, evidence, failures</text>
+  <text class="t" x="670" y="409">project state, next action</text>
+
+  <rect class="panel" x="920" y="170" width="152" height="92" rx="10"/>
+  <text class="h" x="944" y="203">Audit</text>
+  <text class="t" x="944" y="230">Check, scan, trace</text>
+
+  <rect class="panel accent4" x="920" y="328" width="152" height="114" rx="10"/>
+  <text class="h" x="944" y="362">Evolution</text>
+  <text class="t" x="944" y="388">rules, SOPs,</text>
+  <text class="t" x="944" y="411">scripts, cleanup</text>
+
+  <path class="arrow" d="M258 180 C276 180, 292 180, 314 180"/>
+  <path class="arrow" d="M564 180 C594 180, 616 196, 646 212"/>
+  <path class="arrow" d="M564 332 C600 326, 620 285, 646 232"/>
+  <path class="arrow" d="M564 474 C604 456, 624 370, 646 235"/>
+  <path class="arrow" d="M856 214 C884 214, 894 214, 920 214"/>
+  <path class="arrow" d="M751 262 C751 284, 751 304, 751 326"/>
+  <path class="arrow" d="M856 384 C884 384, 894 384, 920 384"/>
+  <path class="arrow" d="M996 328 C996 302, 996 286, 996 262"/>
+  <path class="arrow" d="M920 404 C820 520, 510 585, 170 228"/>
+
+  <rect class="panel" x="48" y="560" width="1024" height="44" rx="8"/>
+  <text class="small" x="72" y="587">Local-first design: Markdown + JSON + Git history. Add databases, vector search, or hosted services only after the file-based loop is useful.</text>
+</svg>

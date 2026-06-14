@@ -1,0 +1,53 @@
+{
+  "schema_version": "systems.v1",
+  "systems": [
+    {
+      "system_id": "system_control_system",
+      "display_name": "Control System",
+      "status": "active",
+      "maturity": "L3",
+      "entry_path": "system/00_control/one_page_overview.md",
+      "summary": "Task routing, three-layer recall, rule hierarchy, writeback policy, and safety boundaries."
+    },
+    {
+      "system_id": "personal_memory_system",
+      "display_name": "L1 Project Memory And Rules",
+      "status": "active",
+      "maturity": "L2",
+      "entry_path": "system/01_memory/README.md",
+      "summary": "Project handoff, immediate task memory, knowledge cards, durable rules, and error routes."
+    },
+    {
+      "system_id": "project_spec_system",
+      "display_name": "Project Spec System",
+      "status": "active",
+      "maturity": "L2",
+      "entry_path": "system/02_projects/project_card_template.md",
+      "summary": "Project cards, current context, acceptance criteria, evidence traces, and validation records."
+    },
+    {
+      "system_id": "external_information_intake_system",
+      "display_name": "L2 Local External Knowledge",
+      "status": "active",
+      "maturity": "L1",
+      "entry_path": "system/03_external_knowledge/README.md",
+      "summary": "Local source manifests, indexes, digests, candidate rules, and adaptation notes."
+    },
+    {
+      "system_id": "realtime_research_system",
+      "display_name": "L3 Real-Time Verification",
+      "status": "review",
+      "maturity": "L1",
+      "entry_path": "system/07_realtime_research/README.md",
+      "summary": "Current verification for APIs, prices, versions, laws, platform rules, and security guidance."
+    },
+    {
+      "system_id": "evolution_system",
+      "display_name": "Controlled Evolution System",
+      "status": "active",
+      "maturity": "L1",
+      "entry_path": "system/06_evolution/README.md",
+      "summary": "Error routes become prevention rules; repeated processes become SOPs; stale memory is demoted."
+    }
+  ]
+}

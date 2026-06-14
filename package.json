@@ -1,0 +1,17 @@
+{
+  "name": "personal-ai-os-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-file AI cognitive memory system template.",
+  "type": "module",
+  "scripts": {
+    "dashboard": "node scripts/build_dashboard.mjs",
+    "scan": "node scripts/scan_sensitive.mjs",
+    "validate": "node scripts/validate_repository.mjs",
+    "check": "npm run validate && npm run scan && npm run dashboard"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
