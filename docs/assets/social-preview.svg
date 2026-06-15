@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Personal AI Cognitive OS</title>
+  <desc id="desc">A local-first AI agent memory and workflow governance template.</desc>
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <rect x="54" y="54" width="1092" height="522" rx="28" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <circle cx="132" cy="130" r="14" fill="#22C55E"/>
+  <circle cx="178" cy="130" r="14" fill="#38BDF8"/>
+  <circle cx="224" cy="130" r="14" fill="#F59E0B"/>
+  <text x="90" y="220" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="58" font-weight="750">Personal AI Cognitive OS</text>
+  <text x="92" y="282" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30">Local-first memory and workflow governance for long-running AI agents</text>
+  <g transform="translate(92 354)">
+    <rect width="270" height="92" rx="18" fill="#1E293B" stroke="#475569"/>
+    <text x="28" y="40" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Project Memory</text>
+    <text x="28" y="70" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">rules, handoff, state</text>
+  </g>
+  <g transform="translate(390 354)">
+    <rect width="270" height="92" rx="18" fill="#1E293B" stroke="#475569"/>
+    <text x="28" y="40" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Knowledge Layer</text>
+    <text x="28" y="70" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">local docs and sources</text>
+  </g>
+  <g transform="translate(688 354)">
+    <rect width="270" height="92" rx="18" fill="#1E293B" stroke="#475569"/>
+    <text x="28" y="40" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Error Routes</text>
+    <text x="28" y="70" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">avoid repeated dead ends</text>
+  </g>
+  <path d="M362 400H390" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M660 400H688" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="92" y="492" width="454" height="42" rx="21" fill="#0F766E"/>
+  <text x="118" y="520" fill="#ECFEFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Markdown + JSON + Audit Logs + Static Dashboard</text>
+  <text x="91" y="565" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">github.com/fuzewen19930127-droid/personal-ai-cognitive-os</text>
+</svg>

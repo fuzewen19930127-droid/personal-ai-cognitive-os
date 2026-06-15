@@ -2,6 +2,8 @@
 
 A local-file template for giving AI agents durable project memory, explicit rules, error-route recall, external knowledge, real-time verification, and controlled evolution.
 
+![Personal AI Cognitive OS preview](./docs/assets/social-preview.svg)
+
 This is not a chat-log dump and it is not a private hard drive published to GitHub. It is a sanitized template for building an AI memory operating layer with Markdown, JSON, project cards, rule cards, audit logs, and a static dashboard.
 
 ## Why This Exists
